@@ -1,12 +1,8 @@
 import React, { useEffect, useState  } from 'react';
-import { useParams } from 'react-router-dom';
 import {pedirDatos} from '../helpers/pedirDatos'
 import {ItemList} from './ItemList'
 
 export const ItemListContainer = () => {
-
-    const {catId} = useParams();    
-
     const [data,setData] = useState([]);
     const [loading,setLoading] = useState(false);
 
