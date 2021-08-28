@@ -9,7 +9,11 @@ export const ItemList = ({productos = []}) => {
             <h2>Productos</h2>
             <hr/>
             <div className="row">
-                {productos.map( prod => <Item key={prod.id} {...prod}/> )}
+                {
+                productos && productos.length > 0
+                ? productos.map(prod => <Item key={prod.id} {...prod}/>)
+                : <div>No existen productos cargados en el sistema...</div>
+                }
             </div>
         </section>
     );

@@ -19,7 +19,7 @@ export const stock = [
     },
     {
         id: 3,
-        categoria:'remera',
+        categoria:'remeras',
         nombre: "Remera 1",
         precio: 2000,
         desc: "Una cosa maravillosa",
@@ -28,7 +28,7 @@ export const stock = [
     },
     {
         id: 4,
-        categoria:'remera',
+        categoria:'remeras',
         nombre: "Remera 2",
         precio: 1700,
         desc: "Una cosa maravillosa",
@@ -37,7 +37,7 @@ export const stock = [
     },
     {
         id: 5,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 1",
         precio: 4000,
         desc: "Una cosa maravillosa",
@@ -46,7 +46,7 @@ export const stock = [
     },
     {
         id: 6,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 2",
         precio: 4200,
         desc: "Una cosa maravillosa",
@@ -55,7 +55,7 @@ export const stock = [
     },
     {
         id: 7,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 3",
         precio: 4200,
         desc: "Una cosa maravillosa",
@@ -64,7 +64,7 @@ export const stock = [
     },
     {
         id: 8,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 4",
         precio: 4200,
         desc: "Una cosa maravillosa",
@@ -72,7 +72,7 @@ export const stock = [
         talle:"M"
     },    {
         id: 9,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 5",
         precio: 4200,
         desc: "Una cosa maravillosa",
@@ -81,7 +81,7 @@ export const stock = [
     },
     {
         id: 10,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 6",
         precio: 4200,
         desc: "Una cosa maravillosa",
@@ -90,7 +90,7 @@ export const stock = [
     },
     {
         id: 11,
-        categoria:'pantalon',
+        categoria:'pantalones',
         nombre: "Pantalón 7",
         precio: 4200,
         desc: "Una cosa maravillosa",

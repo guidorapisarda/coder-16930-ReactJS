@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-//el elemento recibe, y descompone, los objetos img, nombre, descripcion, y precio
-export const Item = ( {img,nombre,desc,precio,categoria,talle,id} ) => {
+export const ItemDetail = ({id,categoria,nombre,precio,desc,img,talle}) => {
+    //const [cantidad,setCantidad] = useState(1);
+
     return (
         <div className="card col-4">
             <img src={img} alt={nombre}/>
@@ -11,7 +12,9 @@ export const Item = ( {img,nombre,desc,precio,categoria,talle,id} ) => {
             <p><strong>Precio: </strong>${precio}</p>
             <p><strong>Categoria: </strong>{categoria}</p>
             <p><strong>Talle: </strong>{talle}</p>
-            <Link to={`/item/${id}`} className="btn btn-outline-primary">Ver más</Link>
+            <p><strong>Cantidad:</strong> 1</p>
+
+            <Link to={`/products/${categoria}`} className="btn btn-primary">Volver</Link>
         </div>
-    )
+    );
 }
