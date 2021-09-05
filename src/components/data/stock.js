@@ -6,7 +6,8 @@ export const stock = [
         precio: 6000,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"L"
+        talle:"L",
+        stock:5
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export const stock = [
         precio: 8000,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"XL"
+        talle:"XL",
+        stock:5
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ export const stock = [
         precio: 2000,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"S"
+        talle:"S",
+        stock:5
     },
     {
         id: 4,
@@ -33,7 +36,8 @@ export const stock = [
         precio: 1700,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"XS"
+        talle:"XS",
+        stock:5
     },
     {
         id: 5,
@@ -42,7 +46,8 @@ export const stock = [
         precio: 4000,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"XXL"
+        talle:"XXL",
+        stock:5
     },
     {
         id: 6,
@@ -51,7 +56,8 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     },
     {
         id: 7,
@@ -60,7 +66,8 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     },
     {
         id: 8,
@@ -69,7 +76,8 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     },    {
         id: 9,
         categoria:'pantalones',
@@ -77,7 +85,8 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     },
     {
         id: 10,
@@ -86,7 +95,8 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     },
     {
         id: 11,
@@ -95,6 +105,7 @@ export const stock = [
         precio: 4200,
         desc: "Una cosa maravillosa",
         img: "https://via.placeholder.com/200",
-        talle:"M"
+        talle:"M",
+        stock:5
     }
 ]

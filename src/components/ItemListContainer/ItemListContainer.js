@@ -1,6 +1,7 @@
 import React, { useEffect, useState  } from 'react';
 import { useParams } from 'react-router-dom';
 import {pedirDatos} from '../helpers/pedirDatos'
+import { Loader } from '../Loader/Loader';
 import {ItemList} from './ItemList'
 
 export const ItemListContainer = () => {
@@ -24,7 +25,7 @@ export const ItemListContainer = () => {
     return (
         <>
             {loading
-            ? <h2>Cargando...</h2>
+            ? <Loader loading/>
             : <ItemList productos={data}/>}
         </>
     );
