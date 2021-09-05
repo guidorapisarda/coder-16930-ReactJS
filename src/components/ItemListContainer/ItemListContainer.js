@@ -1,12 +1,13 @@
-import React, { useEffect, useState  } from 'react';
+import React, { useEffect, useState,useContext  } from 'react';
 import { useParams } from 'react-router-dom';
+import { UIContext } from '../../Context/UIContext';
 import {pedirDatos} from '../helpers/pedirDatos'
 import { Loader } from '../Loader/Loader';
 import {ItemList} from './ItemList'
 
 export const ItemListContainer = () => {
     const [data,setData] = useState([]);
-    const [loading,setLoading] = useState(false);
+    const {loading, setLoading} = useContext(UIContext);
 
     const {catFilter} = useParams();
 
@@ -20,7 +21,7 @@ export const ItemListContainer = () => {
                 setData(res)})
             .catch(err => console.log(err))
             .finally( () => {setLoading(false)});
-    },[catFilter]);
+    },[catFilter,setLoading]);
 
     return (
         <>

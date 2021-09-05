@@ -1,10 +1,9 @@
   
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Counter = ({max, cantidad, setCantidad, agregar, agregado}) => {
     console.log(agregado);
-    //const [cantidad,setCantidad] = useState(1);
     const handleSumar = () => {
         if (cantidad < max) {
             setCantidad(cantidad + 1);

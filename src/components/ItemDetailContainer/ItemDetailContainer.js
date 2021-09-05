@@ -1,32 +1,32 @@
-import React, { useEffect, useState  } from 'react';
+import React, { useEffect, useContext,useState  } from 'react';
 import { useParams } from 'react-router-dom';
 import {ItemDetail} from './ItemDetail'
 import { pedirDatos } from '../helpers/pedirDatos'
+import { UIContext } from '../../Context/UIContext';
+import Loader from 'react-spinners/BarLoader';
 
 export const ItemDetailContainer = () => {
 
     const {id} = useParams();
 
-    console.log(id);
-
     const [Item, setItem] = useState(null);
-    const [loading,setLoading] = useState(false);
+    const {loading, setLoading} = useContext(UIContext);
 
     useEffect( () => {
-        setLoading(true);
-
         pedirDatos()
             .then(res => {
                 setItem(res.find(elem => elem.id === Number(id)))
             })
             .catch(err => {console.log('Ocurrio un error buscando el producto: '+err)})
-            .finally(()=> { setLoading(false)});
-    },[id]);
+            .finally(()=> {
+                setLoading(false);
+            });
+    },[id,setLoading]);
 
     return (
         <div>
             {loading
-            ? <h2>Cargando...</h2>
+            ? <Loader loading/>
             :<ItemDetail {...Item}/>
             }
         </div>

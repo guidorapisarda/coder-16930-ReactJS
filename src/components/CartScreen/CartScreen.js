@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../Context/CartContext'
+import { CartContext } from '../../Context/CartContext'
 import Trashicon from '@material-ui/icons/DeleteRounded';
 export const CartScreen = () => {
 
