@@ -1,7 +1,7 @@
 import React, { useEffect, useState,useContext  } from 'react';
 import { useParams } from 'react-router-dom';
 import { UIContext } from '../../Context/UIContext';
-import {pedirDatos} from '../helpers/pedirDatos'
+import {pedirDatos} from '../../helpers/pedirDatos'
 import { Loader } from '../Loader/Loader';
 import {ItemList} from './ItemList'
 
