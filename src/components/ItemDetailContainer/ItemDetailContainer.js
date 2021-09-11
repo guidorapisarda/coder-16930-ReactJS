@@ -2,7 +2,7 @@ import React, { useEffect, useContext,useState  } from 'react';
 import { useParams } from 'react-router-dom';
 import {ItemDetail} from './ItemDetail'
 import { UIContext } from '../../Context/UIContext';
-import Loader from 'react-spinners/BarLoader';
+import { Loader } from '../Loader/Loader';
 import { obtenerElemento } from '../../helpers/funcionesDB';
 
 export const ItemDetailContainer = () => {
