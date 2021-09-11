@@ -1,7 +1,7 @@
 import React, { useEffect, useState,useContext  } from 'react';
 import { useParams } from 'react-router-dom';
 import { UIContext } from '../../Context/UIContext';
-import {pedirDatos} from '../helpers/pedirDatos'
+import { obtenerElementos } from '../../helpers/funcionesDB';
 import { Loader } from '../Loader/Loader';
 import {ItemList} from './ItemList'
 
@@ -14,11 +14,8 @@ export const ItemListContainer = () => {
     useEffect( () => {
         setLoading(true);
 
-        pedirDatos()
-            .then(res => {
-                if(catFilter)
-                    res = res.filter(element => element.categoria === catFilter)
-                setData(res)})
+        obtenerElementos('productos',catFilter)
+            .then(res => {setData(res)})
             .catch(err => console.log(err))
             .finally( () => {setLoading(false)});
     },[catFilter,setLoading]);
