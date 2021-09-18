@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../../Context/CartContext'
+import React, { useContext } from 'react';
+import { CartContext } from '../../Context/CartContext';
 import Trashicon from '@material-ui/icons/DeleteRounded';
+import { Link } from 'react-router-dom';
 export const CartScreen = () => {
 
-    const {carrito, eliminarDelCarrito, vaciarCarrito} = useContext(CartContext);
+    const {carrito, eliminarDelCarrito, vaciarCarrito,totalCarrito} = useContext(CartContext);
 
     return (
         <div>
@@ -16,10 +17,19 @@ export const CartScreen = () => {
                     <Trashicon onClick={() => eliminarDelCarrito(prod.id)}/>
                 </div>
             ))}
+            <hr/>
+            <p>Total: ${totalCarrito()}</p>
 
             <hr/>
 
             <button className="btn btn-danger" onClick={vaciarCarrito}>Vaciar carrito</button>
+
+            <Link to="/checkout">
+                <button className="btn btn-success mx-3">
+                    Finalizar compra
+                </button>
+            </Link>
+
         </div>
     )
 }

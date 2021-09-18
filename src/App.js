@@ -9,6 +9,7 @@ import { CartScreen } from "./components/CartScreen/CartScreen";
 import { UIContextProvider } from "./Context/UIContext";
 import { Home } from "./components/Home/Home";
 import { ClickTracker } from "./components/ClickTracker/ClickTracker";
+import {Checkout} from "./components/Checkout/Checkout"
 function App() {
     return (
         <>
@@ -44,6 +45,11 @@ function App() {
                             <Route exact path="/cart">
                                 <CartScreen />
                             </Route>
+
+                            <Route exact path ="/checkout">
+                                <Checkout/>
+                            </Route>
+
                             <Route path="*">
                                 <Redirect to="/" />
                             </Route>

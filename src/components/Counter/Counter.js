@@ -3,7 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export const Counter = ({max, cantidad, setCantidad, agregar, agregado}) => {
-    console.log(agregado);
+
+    
     const handleSumar = () => {
         if (cantidad < max) {
             setCantidad(cantidad + 1);
