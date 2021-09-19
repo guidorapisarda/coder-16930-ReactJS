@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
 import Trashicon from '@material-ui/icons/DeleteRounded';
 import { Link } from 'react-router-dom';
+import { generarOrden } from '../../helpers/funcionesDB';
 export const CartScreen = () => {
 
     const {carrito, eliminarDelCarrito, vaciarCarrito,totalCarrito} = useContext(CartContext);
