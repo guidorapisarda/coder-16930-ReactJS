@@ -55,16 +55,16 @@ export const Checkout = () => {
 
     return (
         <>
-            {/* <div className={"container"}>
+            <div className={"container"}>
                 <div className={"py-5 text-center"}>
                     <h2>Formulario de Compra</h2>
                 </div>
                 <div className={"row g-5"}>
-                    <BuyerInfoForm/>
                     <ProductReview/>
+                    <BuyerInfoForm/>
                 </div>
-            </div> */}
-
+            </div>
+            <hr/>
             <div>
                 <h2>Checkout</h2>
                 <hr />

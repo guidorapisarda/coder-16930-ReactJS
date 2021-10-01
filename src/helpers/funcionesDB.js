@@ -32,7 +32,7 @@ export const generarOrden = async (buyer, carrito, total) => {
             }
         });
 
-        if (outOfStock.length == 0){
+        if (outOfStock.length === 0){
 
             const orderRef = await addDoc(collection(db, "orders"), newOrder);
             batch.commit();
