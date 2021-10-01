@@ -60,7 +60,9 @@ export const Checkout = () => {
                     <h2>Formulario de Compra</h2>
                 </div>
                 <div className={"row g-5"}>
+                    <h4>Resumen del carrito</h4>
                     <ProductReview/>
+                    <h4>Datos personales</h4>
                     <BuyerInfoForm/>
                 </div>
             </div>
