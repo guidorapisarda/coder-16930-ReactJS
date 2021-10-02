@@ -21,9 +21,9 @@ Al realizar un cambio en el codigo y luego guardar, este se vera reflejado en la
 
 ## Librerias utilizadas en el proyecto:
 
-├── @material-ui/core@4.12.3
+├── @material-ui/core@4.12.3 -> Libreria para mejora de visuales del proyecto.
 
-├── @material-ui/icons@4.11.2
+├── @material-ui/icons@4.11.2 -> Libreria para mejora de visuales del proyecto.
 
 ├── bootstrap@5.1.1 -> Libreria para mejora de visuales del proyecto.
 
@@ -31,9 +31,9 @@ Al realizar un cambio en el codigo y luego guardar, este se vera reflejado en la
 
 ├── react-bootstrap@1.6.4 -> Libreria para mejora de visuales del proyecto.
 
-├── react-dom@17.0.2
+├── react-dom@17.0.2 -> Libreria para administracion del DOM.
 
-├── react-router-dom@5.3.0
+├── react-router-dom@5.3.0 -> Libreria para administracion del ruteo de la app.
 
 ├── react-scripts@4.0.3
 
