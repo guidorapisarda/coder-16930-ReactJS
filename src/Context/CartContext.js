@@ -16,8 +16,7 @@ export const CartProvider = ({children}) => {
     const agregarAlCarrito = (prod) => {
         let exists = carrito.find (elem => elem.id === prod.id);
 
-        if (!exists){
-            console.log('El producto no existia. Agregandolo al carrito...');
+        if (!exists){   
             setCarrito([
                 ...carrito,
                 prod
@@ -29,7 +28,6 @@ export const CartProvider = ({children}) => {
                 setCarrito([
                     ...carrito
                 ]);
-                console.log(carrito);
             }
         }
     }

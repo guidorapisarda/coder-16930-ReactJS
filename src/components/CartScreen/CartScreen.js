@@ -1,23 +1,16 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../Context/CartContext';
-import Trashicon from '@material-ui/icons/DeleteRounded';
 import { Link } from 'react-router-dom';
-import { generarOrden } from '../../helpers/funcionesDB';
+import { ProductReview } from '../Checkout/ProductReview';
 export const CartScreen = () => {
 
-    const {carrito, eliminarDelCarrito, vaciarCarrito,totalCarrito} = useContext(CartContext);
+    const {vaciarCarrito,totalCarrito} = useContext(CartContext);
 
     return (
         <div>
             <h1>Resumen de compra</h1>
-            {carrito.map(prod => (
-                <div key={prod.id}>
-                    <h3>{prod.nombre}</h3>
-                    <p>Cantidad: {prod.cantidad}</p>
-                    <p>Precio: ${prod.precio * prod.cantidad}</p>
-                    <Trashicon onClick={() => eliminarDelCarrito(prod.id)}/>
-                </div>
-            ))}
+
+                <ProductReview renderTrash={true}/>
             <hr/>
             <p>Total: ${totalCarrito()}</p>
 

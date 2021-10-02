@@ -7,7 +7,7 @@ export const NavBar = () => {
     return (
         <>
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="/home">
+            <Navbar.Brand as={NavLink} to="/">
                 <img
                 alt=""
                 src="/logo192.png"
@@ -26,7 +26,6 @@ export const NavBar = () => {
                     <NavLink className="mx-1 nav-link" to="/products/remeras">Remeras</NavLink>
                     <NavLink className="mx-1 nav-link" to="/products/calzado">Calzado</NavLink>
                     <NavLink className="mx-1 nav-link" to="/products/pantalones">Pantalones</NavLink>
-                    <NavLink className="mx-1 nav-link" to="/ClickTracker">ClickTracker</NavLink>
                     <NavLink className="mx-1 nav-link" to="/Nosotros">Nosotros</NavLink>
                     <NavLink className="mx-1 nav-link" to="/cart">Carrito <CartWidget/></NavLink>
                 </Nav>

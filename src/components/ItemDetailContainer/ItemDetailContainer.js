@@ -10,7 +10,7 @@ export const ItemDetailContainer = () => {
     const {id} = useParams();
 
     const [Item, setItem] = useState(null);
-    const {loading, setLoading} = useContext(UIContext);
+    const {loading,setLoading} = useContext(UIContext);
 
     useEffect( () => {
         obtenerElemento('productos',id)
@@ -24,7 +24,7 @@ export const ItemDetailContainer = () => {
     return (
         <div>
             {loading
-            ? <Loader loading/>
+            ? <Loader loading={loading}/>
             :<ItemDetail {...Item}/>
             }
         </div>

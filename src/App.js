@@ -8,7 +8,6 @@ import { CartProvider } from "./Context/CartContext";
 import { CartScreen } from "./components/CartScreen/CartScreen";
 import { UIContextProvider } from "./Context/UIContext";
 import { Home } from "./components/Home/Home";
-import { ClickTracker } from "./components/ClickTracker/ClickTracker";
 import {Checkout} from "./components/Checkout/Checkout"
 function App() {
     return (
@@ -35,9 +34,6 @@ function App() {
                                 <hr />
                                 <ItemDetailContainer />
                                 <hr />
-                            </Route>
-                            <Route path="/clicktracker">
-                                <ClickTracker />
                             </Route>
                             <Route path="/nosotros">
                                 <h2>Info sobre nosotros</h2>

@@ -8,7 +8,7 @@ const override = css`
   color: "#000000";
   speedMultiplier: 1.5;
 `;
-export const Loader = (loading) => {
+export const Loader = ({loading}) => {
 
     return (
         <div className="sweet-loading">
