@@ -3,6 +3,8 @@
 Este proyecto fue realizado con React por Guido Rapisarda para la comisión 16930 del curso REACT JS de la plataforma CoderHouse.
 Es una tienda online con diferentes productos de lo que podria ser un local de venta ropa.
 
+La rama que contiene la ultima version del proyecto, correspondiente a la entrega final, es entregaFinal.
+
 ## Scripts disponibles
 
 Scripts recomendados para este proyecto:
