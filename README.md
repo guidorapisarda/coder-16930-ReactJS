@@ -22,7 +22,6 @@ Al realizar un cambio en el codigo y luego guardar, este se vera reflejado en la
 ## Librerias utilizadas en el proyecto:
 
 ├── @material-ui/core@4.12.3
-
 ├── @material-ui/icons@4.11.2
 
 ├── bootstrap@5.1.1 -> Libreria para mejora de visuales del proyecto.
